@@ -5,16 +5,17 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
 /* Reset some basic elements */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -23,11 +24,21 @@ footer {
 }
 
 .flex {
-  display: -webkit-box; /* For old Safari */
-  display: -moz-box; /* For old Firefox */
-  display: -ms-flexbox; /* For IE 10 */
-  display: -webkit-flex; /* For newer Safari and Chrome */
-  display: flex; /* Standard syntax */
+  display: -webkit-box;
+  /* For old Safari */
+  display: -moz-box;
+  /* For old Firefox */
+  display: -ms-flexbox;
+  /* For IE 10 */
+  display: -webkit-flex;
+  /* For newer Safari and Chrome */
+  display: flex;
+  /* Standard syntax */
+}
+
+.flex-cc {
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
@@ -38,6 +49,8 @@ footer {
   text-align: center;
   background: orange;
   margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
@@ -46,17 +59,30 @@ footer {
     text-align: left;
     margin-bottom: 40px;
   }
+
   .reverse {
-      flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
 }
 
 .card .img {
   width: 100%;
-  padding: 4px;
-  border: solid 3px black;
+  max-width: 378px;
+  max-height: 248px;
   background: #fff;
+  position: relative;
+  overflow: hidden;
+  border: solid 4px white;
+  box-shadow: 0 0 0 3px black;
+  transform: scale(0.980);
+  transform: scale(0.980);
+  -webkit-transform: scale(0.980);
+  -moz-transform: scale(0.980);
+  -ms-transform: scale(0.980);
+  -o-transform: scale(0.980);
+
 }
+
 
 .info {
   width: 100%;

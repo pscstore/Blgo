@@ -17,6 +17,11 @@ header {
     margin-bottom: 20px;
 }
 
+footer {
+  padding: 3em 0;
+  text-align: center;
+}
+
 .flex {
   display: -webkit-box; /* For old Safari */
   display: -moz-box; /* For old Firefox */
@@ -27,16 +32,22 @@ header {
 
 .card {
   width: 95%;
+  max-width: 984px;
   margin: 0 auto;
   flex-direction: column;
   text-align: center;
   background: orange;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .card {
     flex-direction: row;
     text-align: left;
+    margin-bottom: 40px;
+  }
+  .reverse {
+      flex-direction: row-reverse;
   }
 }
 
